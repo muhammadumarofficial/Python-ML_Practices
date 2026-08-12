@@ -93,9 +93,17 @@ elif num < 0:
 else:
     print("Zero")
 
+#loops
+#for i in range(3):
+ #   print(i)
 
+# range types maans controlling the stop and start 
+for i in range(2,10):
+    print(i)
 
-
+for i in range(5,40,5):
+    print(i)
+    
 
 
 
