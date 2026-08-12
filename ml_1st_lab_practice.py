@@ -1,1 +1,89 @@
+
 print("hello wordl")
+
+#varibales 
+name="umar"
+age=20
+mark=99
+gpa = float(3.52)
+
+print(name)
+print(age)
+print(mark)
+print(gpa)
+
+# Arithmetic operator
+add = 5+5
+sub = 50-30
+mul = 5*8
+div = 100/2
+floor_div = 15//2
+power = 2**3
+remainder = 10%3
+
+print("add :", add)
+print("sub :", sub)
+print("mul :", mul)
+print("div:", div)
+print(floor_div)
+print(power)
+print(remainder)
+
+#Comparison operators
+a = 10
+b = 20
+
+print(a == b)
+print(a != b)
+print(a > b)
+print(a < b)
+print(a >= b)
+print(a <= b)
+
+#Logical Operators 
+print("logical operators")
+salary = 1000
+
+print(salary>=1000 and salary<=2000 )
+print(salary<1000 or salary>2000)
+
+x=True
+print(not x)
+
+#Conditional Statements
+
+x = 50
+if x<=50:
+    print("number is less and equal")
+else:
+    print("number is greater")
+
+# if else with input
+age = int(input("enter your age "))
+
+if age>=18 and age<=50:
+    print("you are adult ")
+elif age>50:
+    print("you are old")
+else:
+    print("your are child")
+
+#nested if
+has_id = True
+
+if age>=18:
+    if has_id:
+        print("allow to vist")
+    else:
+        print("not allowed")
+else:
+    print("you are not eligible")
+
+
+
+
+
+
+
+
+
