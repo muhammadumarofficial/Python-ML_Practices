@@ -1,3 +1,7 @@
+#git add .
+#git commit -m "msg"
+#git push
+
 
 print("hello wordl")
 
@@ -78,6 +82,17 @@ if age>=18:
         print("not allowed")
 else:
     print("you are not eligible")
+
+#number indentifyer
+num = int(input("Enter a number: "))
+
+if num > 0:
+    print("Positive")
+elif num < 0:
+    print("Negative")
+else:
+    print("Zero")
+
 
 
 
