@@ -111,52 +111,79 @@
 #     print(i)
 #     i += 1
 
-#user define function
-def greet():
-    print("Hello Umar")
+# #user define function
+# def greet():
+#     print("Hello Umar")
 
-greet()
+# greet()
 
-def greetuser(name):
-    print("Hello ",name)
+# def greetuser(name):
+#     print("Hello ",name)
 
-greetuser("ali")
+# greetuser("ali")
 
-def add(a,b):
-    print(a+b)
+# def add(a,b):
+#     print(a+b)
 
-add(1,2)
+# add(1,2)
 
-def num(*args):
-    print(sum(args))
+# def num(*args):
+#     print(sum(args))
 
-num(10,20,30)
+# num(10,20,30)
 
-def sumOfAll(*args):
-    return sum(args)
+# def sumOfAll(*args):
+#     return sum(args)
 
-print(sumOfAll(1,2,3,4,5,6,7,8,9,))
+# print(sumOfAll(1,2,3,4,5,6,7,8,9,))
 
-#with kwargs
-def marks(**kwargs):
-    for value in kwargs:
-        print(value)
+# #with kwargs
+# def marks(**kwargs):
+#     for value in kwargs:
+#         print(value)
 
-marks(umar="80",ammar="60",ali="70",fahad="90")
+# marks(umar="80",ammar="60",ali="70",fahad="90")
 
-#with loop
-def student(**kwargs):
-    for key,value in kwargs.items():
-        print(key,"=",value)
+# #with loop
+# def student(**kwargs):
+#     for key,value in kwargs.items():
+#         print(key,"=",value)
 
-student(name="Umar", age=20, city="Karachi")
+# student(name="Umar", age=20, city="Karachi")
 
-#lamda function
-sq = lambda x: x*x
-print(sq(2))
+# #lamda function
+# sq = lambda x: x*x
+# print(sq(2))
 
-expSum = lambda a,b : a+b+a
-print(expSum(1,5))
+# expSum = lambda a,b : a+b+a
+# print(expSum(1,5))
+
+
+#list
+num = [1,2,3,4,5]
+print("original list",num)
+#print(type(num))
+num.append(6)
+#print("after append", num)
+num.append("umar")
+#print("after add text", num)
+print(num[1], num[6])
+num.insert(5,2.5)
+#print(num)
+num.remove(2.5)
+#print(num)
+num.extend([10,11,12])  #ya ek lsit ko add krta ha yani ya hr value ko alag suppose krata ha
+num.append([20,22,23])  #ya append is poori list ko ek item suppose kr rha ha
+#print(num)
+print("list length",len(num))
+print("before pop",num)
+print("pop this ",num.pop())
+#lsit through loop
+for i in num:
+    print(i)
+for i in range(len(num)):
+    print(num[i])
+
 
 
 
