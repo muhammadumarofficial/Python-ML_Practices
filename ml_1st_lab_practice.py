@@ -112,18 +112,30 @@
 #     i += 1
 
 #user define function
-def addTwoNum(*args):
-    return sum(10,10)
+def greet():
+    print("Hello Umar")
 
-print(addTwoNum)
+greet()
 
+def greetuser(name):
+    print("Hello ",name)
 
+greetuser("ali")
 
+def add(a,b):
+    print(a+b)
 
+add(1,2)
 
+def num(*args):
+    print(sum(args))
 
+num(10,20,30)
 
+def sumOfAll(*args):
+    return sum(args)
 
+print(sumOfAll(1,2,3,4,5,6,7,8,9,))
 
 
 
