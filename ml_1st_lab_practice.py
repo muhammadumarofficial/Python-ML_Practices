@@ -137,6 +137,26 @@ def sumOfAll(*args):
 
 print(sumOfAll(1,2,3,4,5,6,7,8,9,))
 
+#with kwargs
+def marks(**kwargs):
+    for value in kwargs:
+        print(value)
+
+marks(umar="80",ammar="60",ali="70",fahad="90")
+
+#with loop
+def student(**kwargs):
+    for key,value in kwargs.items():
+        print(key,"=",value)
+
+student(name="Umar", age=20, city="Karachi")
+
+#lamda function
+sq = lambda x: x*x
+print(sq(2))
+
+expSum = lambda a,b : a+b+a
+print(expSum(1,5))
 
 
 
