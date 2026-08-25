@@ -160,29 +160,50 @@
 
 
 #list
-num = [1,2,3,4,5]
-print("original list",num)
-#print(type(num))
-num.append(6)
-#print("after append", num)
-num.append("umar")
-#print("after add text", num)
-print(num[1], num[6])
-num.insert(5,2.5)
-#print(num)
-num.remove(2.5)
-#print(num)
-num.extend([10,11,12])  #ya ek lsit ko add krta ha yani ya hr value ko alag suppose krata ha
-num.append([20,22,23])  #ya append is poori list ko ek item suppose kr rha ha
-#print(num)
-print("list length",len(num))
-print("before pop",num)
-print("pop this ",num.pop())
-#lsit through loop
-for i in num:
-    print(i)
-for i in range(len(num)):
-    print(num[i])
+# num = [1,2,3,4,5]
+# print("original list",num)
+# #print(type(num))
+# num.append(6)
+# #print("after append", num)
+# num.append("umar")
+# #print("after add text", num)
+# print(num[1], num[6])
+# num.insert(5,2.5)
+# #print(num)
+# num.remove(2.5)
+# #print(num)
+# num.extend([10,11,12])  #ya ek lsit ko add krta ha yani ya hr value ko alag suppose krata ha
+# num.append([20,22,23])  #ya append is poori list ko ek item suppose kr rha ha
+# #print(num)
+# print("list length",len(num))
+# print("before pop",num)
+# print("pop this ",num.pop())
+# #lsit through loop
+# for i in num:
+#     print(i)
+# for i in range(len(num)):
+#     print(num[i])
+
+#tuples
+num = (10,20,50,"umar")
+print(type(num))
+print("original",num)
+num[1]=4      # it means tuple values can not be changed
+print("after update",num)
+#tuple unpacking it means assigning the vairibale to tuple values
+oop,db,se,name = num
+print(oop,name,se,name)
+data = 1,2,3,4,5    #tuple ko without bracket bhi lekha ja skta han
+print(type(data))
+print(data)
+#converting tuples in list
+my_list = [data]
+print("check tuple type after convert",type(my_list))
+
+
+
+
+
 
 
 
