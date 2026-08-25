@@ -185,23 +185,48 @@
 #     print(num[i])
 
 #tuples
-num = (10,20,50,"umar")
-print(type(num))
-print("original",num)
-num[1]=4      # it means tuple values can not be changed
-print("after update",num)
-#tuple unpacking it means assigning the vairibale to tuple values
-oop,db,se,name = num
-print(oop,name,se,name)
-data = 1,2,3,4,5    #tuple ko without bracket bhi lekha ja skta han
-print(type(data))
-print(data)
-#converting tuples in list
-my_list = [data]
-print("check tuple type after convert",type(my_list))
+
+# num = (10,20,50,"umar")
+# print(type(num))
+# print("original",num)
+# num[1]=4      # it means tuple values can not be changed
+# print("after update",num)
+# #tuple unpacking it means assigning the vairibale to tuple values
+# oop,db,se,name = num
+# print(oop,name,se,name)
+# data = 1,2,3,4,5    #tuple ko without bracket bhi lekha ja skta han
+# print(type(data))
+# print(data)
+# #converting tuples in list
+# my_list = [data]
+# print("check tuple type after convert",type(my_list))
 
 
-
+#set
+number = {1,2,3,4,3}
+print(type(number))
+print(number)
+number.add(100)
+print("after add ",number)
+number.remove(100)
+print("after remove",number)
+number.discard(500)
+print("after discard",number)
+number.update([10,20,30])
+print("after update ",number)
+number.pop()   #ya yahan pop krta ha ek arbitrary element ko na ka last wala ko
+print("after pop",number)
+# mathematical operation for set
+A = {"a","b","c","c","x","y"}
+B = {"b","c","x","y","y"}
+print("Union",A.union(B))
+print("intersection",B.intersection(A))
+print("difference",print(A-B))
+print("differcen B-A ",print(B-A))
+print("Symmetric Differenc",A.symmetric_difference(B))
+print("SUbset",A.issubset(B))
+print("dijoint",A.isdisjoint(B))
+print("Superset",A.issuperset(B))
 
 
 
