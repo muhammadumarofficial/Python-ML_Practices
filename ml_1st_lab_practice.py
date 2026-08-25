@@ -203,30 +203,47 @@
 
 
 #set
-number = {1,2,3,4,3}
-print(type(number))
-print(number)
-number.add(100)
-print("after add ",number)
-number.remove(100)
-print("after remove",number)
-number.discard(500)
-print("after discard",number)
-number.update([10,20,30])
-print("after update ",number)
-number.pop()   #ya yahan pop krta ha ek arbitrary element ko na ka last wala ko
-print("after pop",number)
-# mathematical operation for set
-A = {"a","b","c","c","x","y"}
-B = {"b","c","x","y","y"}
-print("Union",A.union(B))
-print("intersection",B.intersection(A))
-print("difference",print(A-B))
-print("differcen B-A ",print(B-A))
-print("Symmetric Differenc",A.symmetric_difference(B))
-print("SUbset",A.issubset(B))
-print("dijoint",A.isdisjoint(B))
-print("Superset",A.issuperset(B))
+# number = {1,2,3,4,3}
+# print(type(number))
+# print(number)
+# number.add(100)
+# print("after add ",number)
+# number.remove(100)
+# print("after remove",number)
+# number.discard(500)
+# print("after discard",number)
+# number.update([10,20,30])
+# print("after update ",number)
+# number.pop()   #ya yahan pop krta ha ek arbitrary element ko na ka last wala ko
+# print("after pop",number)
+# # mathematical operation for set
+# A = {"a","b","c","c","x","y"}
+# B = {"b","c","x","y","y"}
+# print("Union",A.union(B))
+# print("intersection",B.intersection(A))
+# print("difference",print(A-B))
+# print("differcen B-A ",print(B-A))
+# print("Symmetric Differenc",A.symmetric_difference(B))
+# print("SUbset",A.issubset(B))
+# print("dijoint",A.isdisjoint(B))
+# print("Superset",A.issuperset(B))
+
+#Dictionary
+student = {
+    "name":"umar",
+    "name":"Ali",  #yahn ya overwrite kr da rha ha 
+    "age":20,
+    "marks":90
+}
+print(type(student))
+print(student)
+student["marks"]=100
+print("after marks update",student)
+print(student.items())
+print(student.keys())
+print(student.values())
+student.update({"city":"karachi", "phone": "032422"})
+print("after update", student)
 
 
 
