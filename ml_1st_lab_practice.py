@@ -229,25 +229,54 @@
 # print("Superset",A.issuperset(B))
 
 #Dictionary
-student = {
-    "name":"umar",
-    "name":"Ali",  #yahn ya overwrite kr da rha ha 
-    "age":20,
-    "marks":90
-}
-print(type(student))
-print(student)
-student["marks"]=100
-print("after marks update",student)
-print(student.items())
-print(student.keys())
-print(student.values())
-student.update({"city":"karachi", "phone": "032422"})
-print("after update", student)
+# student = {
+#     "name":"umar",
+#     "name":"Ali",  #yahn ya overwrite kr da rha ha 
+#     "age":20,
+#     "marks":90
+# }
+# print(type(student))
+# print(student)
+# student["marks"]=100
+# print("after marks update",student)
+# print(student.items())
+# print(student.keys())
+# print(student.values())
+# student.update({"city":"karachi", "phone": "032422"})
+# print("after update", student)
 
-
-
-
+#NumPy 
+import numpy as np
+num = np.array([1,2,3,4,5,6])
+print(num)
+sum = np.sum(num)
+print(sum)
+arr = np.array([[1,2,3],[4,5,6]])
+print("2d array",arr)
+print("shape :",arr.shape)
+print("ndim :",np.ndim(arr))
+print("size :",np.size(arr))
+print("dtype :",arr.dtype)
+#zeros array
+zeroArr = np.zeros((2,5))
+print("zero 2d-array : ",zeroArr)
+#one array
+oneArr = np.ones(5)
+print("one array : ",oneArr)
+#full function use
+fillWith = np.full((2,3),10)
+print("full with function 2d-array :", fillWith)
+change = num.reshape(2,3)
+print("reshape",change)
+#flatten mena convert krta ha 2d, 3d ko 1d ma
+new_arr = fillWith.flatten()
+print("2d to 1d using flatten: ", new_arr)
+#transpose:
+tran = arr.transpose()
+print("transpose",tran)
+#where condition
+ran = np.array([10,20,30,5,3,40,50])
+print("gretaer than 20 with where :", np.where(ran > 20))
 
 
     
