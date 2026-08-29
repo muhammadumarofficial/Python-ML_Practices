@@ -278,33 +278,41 @@ import numpy as np
 # ran = np.array([10,20,30,5,3,40,50])
 # print("gretaer than 20 with where :", np.where(ran > 20))
 #matrix multiplication in numpy
-X= np.array([[1,2],[3,4]])
-Y = np.array([[5,6],[7,8]])
-Z = X @ Y
-print("matrix Multiplication", Z)
-A = X*Y
-print("element wise matrix multipication", A)
-#broadcasting
-B = X + 2
-C = X - 2
-D = X * 2
-E = X / 2
-F = np.array([100,200])
-G = X + F
-H = np.array([[500],[600]])
-I = X + H # is sa hr row pr plus hoga
-print("Boradcasting")
-print(B)
-print(C)
-print(D)
-print(E)
-print("Broadcast with Array")
-print(G)
-print("all new row")
-print(I)
+# X= np.array([[1,2],[3,4]])
+# Y = np.array([[5,6],[7,8]])
+# Z = X @ Y
+# print("matrix Multiplication", Z)
+# A = X*Y
+# print("element wise matrix multipication", A)
+# #broadcasting
+# B = X + 2
+# C = X - 2
+# D = X * 2
+# E = X / 2
+# F = np.array([100,200])
+# G = X + F
+# H = np.array([[500],[600]])
+# I = X + H # is sa hr row pr plus hoga
+# print("Boradcasting")
+# print(B)
+# print(C)
+# print(D)
+# print(E)
+# print("Broadcast with Array")
+# print(G)
+# print("all new row")
+# print(I)
 
-
-
+# Boolean Masking and Fancy Index
+arr = np.array([10,20,30,40,50,60,70,80,90])
+print("using boolean masking > 50", arr[arr > 50])
+print("suign boolean masking 20 < arr < 70", arr[(arr > 20) & (arr < 70)])
+#fancy maskign
+print("i want 1,4,6 index's element :", arr[[1,4,6]])
+print("use of arrange", np.arange(0,10))
+print("aragane with step ", np.arange(2,20,2))
+print("use of linspace ", np.linspace(5,10))
+print("linspace with step", np.linspace(5,30,10))
 
     
 
