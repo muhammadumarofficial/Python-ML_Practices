@@ -315,25 +315,41 @@ import numpy as np
 # print("linspace with step", np.linspace(5,30,10))
 
 # Pandas
-import pandas as pd
-#series
-data = pd.Series([20,30,40],
-                 index=["umar","ali", "hammad"])
-print(data)
-print(data["umar"])
-#dataframe
+# import pandas as pd
+# #series
+# data = pd.Series([20,30,40],
+#                  index=["umar","ali", "hammad"])
+# print(data)
+# print(data["umar"])
+# #dataframe
 
-dta = {
-    "name":["zubair","yaseen","waseem"],
-    "age":[40,34,50,],
-    "address":["lahore","islamabad","multan"]
-}
-emp = pd.DataFrame(dta)
-print(emp)
-print(emp[["name","address"]])
-#series with dictionary
-s = pd.Series(dta)
-print(s)
+# dta = {
+#     "name":["zubair","yaseen","waseem"],
+#     "age":[40,34,50,],
+#     "address":["lahore","islamabad","multan"]
+# }
+# emp = pd.DataFrame(dta)
+# print(emp)
+# print(emp[["name","address"]])
+# #series with dictionary
+# s = pd.Series(dta)
+# print(s)
+
+#matplotlib
+import matplotlib.pyplot as plt
+x = [1,2,3,4,5,6,7]
+y = [10,20,30,40,50,60,70]
+#plt.plot(x, y)
+#plt.show()
+
+sub = ["Math","English","Physics"]
+marks = [80,90,70]
+plt.title("Transcript")
+plt.bar(sub,marks, label="student1")
+plt.xlabel("sub")
+plt.ylabel("marks")
+plt.legend()
+plt.show()
 
 
 
