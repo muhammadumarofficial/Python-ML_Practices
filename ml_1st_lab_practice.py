@@ -303,16 +303,39 @@ import numpy as np
 # print("all new row")
 # print(I)
 
-# Boolean Masking and Fancy Index
-arr = np.array([10,20,30,40,50,60,70,80,90])
-print("using boolean masking > 50", arr[arr > 50])
-print("suign boolean masking 20 < arr < 70", arr[(arr > 20) & (arr < 70)])
-#fancy maskign
-print("i want 1,4,6 index's element :", arr[[1,4,6]])
-print("use of arrange", np.arange(0,10))
-print("aragane with step ", np.arange(2,20,2))
-print("use of linspace ", np.linspace(5,10))
-print("linspace with step", np.linspace(5,30,10))
+# # Boolean Masking and Fancy Index
+# arr = np.array([10,20,30,40,50,60,70,80,90])
+# print("using boolean masking > 50", arr[arr > 50])
+# print("suign boolean masking 20 < arr < 70", arr[(arr > 20) & (arr < 70)])
+# #fancy maskign
+# print("i want 1,4,6 index's element :", arr[[1,4,6]])
+# print("use of arrange", np.arange(0,10))
+# print("aragane with step ", np.arange(2,20,2))
+# print("use of linspace ", np.linspace(5,10))
+# print("linspace with step", np.linspace(5,30,10))
+
+# Pandas
+import pandas as pd
+#series
+data = pd.Series([20,30,40],
+                 index=["umar","ali", "hammad"])
+print(data)
+print(data["umar"])
+#dataframe
+
+dta = {
+    "name":["zubair","yaseen","waseem"],
+    "age":[40,34,50,],
+    "address":["lahore","islamabad","multan"]
+}
+emp = pd.DataFrame(dta)
+print(emp)
+print(emp[["name","address"]])
+#series with dictionary
+s = pd.Series(dta)
+print(s)
+
+
 
     
 
