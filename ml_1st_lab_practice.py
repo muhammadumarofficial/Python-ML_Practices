@@ -247,36 +247,63 @@
 
 #NumPy 
 import numpy as np
-num = np.array([1,2,3,4,5,6])
-print(num)
-sum = np.sum(num)
-print(sum)
-arr = np.array([[1,2,3],[4,5,6]])
-print("2d array",arr)
-print("shape :",arr.shape)
-print("ndim :",np.ndim(arr))
-print("size :",np.size(arr))
-print("dtype :",arr.dtype)
-#zeros array
-zeroArr = np.zeros((2,5))
-print("zero 2d-array : ",zeroArr)
-#one array
-oneArr = np.ones(5)
-print("one array : ",oneArr)
-#full function use
-fillWith = np.full((2,3),10)
-print("full with function 2d-array :", fillWith)
-change = num.reshape(2,3)
-print("reshape",change)
-#flatten mena convert krta ha 2d, 3d ko 1d ma
-new_arr = fillWith.flatten()
-print("2d to 1d using flatten: ", new_arr)
-#transpose:
-tran = arr.transpose()
-print("transpose",tran)
-#where condition
-ran = np.array([10,20,30,5,3,40,50])
-print("gretaer than 20 with where :", np.where(ran > 20))
+# num = np.array([1,2,3,4,5,6])
+# print(num)
+# sum = np.sum(num)
+# print(sum)
+# arr = np.array([[1,2,3],[4,5,6]])
+# print("2d array",arr)
+# print("shape :",arr.shape)
+# print("ndim :",np.ndim(arr))
+# print("size :",np.size(arr))
+# print("dtype :",arr.dtype)
+# #zeros array
+# zeroArr = np.zeros((2,5))
+# print("zero 2d-array : ",zeroArr)
+# #one array
+# oneArr = np.ones(5)
+# print("one array : ",oneArr)
+# #full function use
+# fillWith = np.full((2,3),10)
+# print("full with function 2d-array :", fillWith)
+# change = num.reshape(2,3)
+# print("reshape",change)
+# #flatten mena convert krta ha 2d, 3d ko 1d ma
+# new_arr = fillWith.flatten()
+# print("2d to 1d using flatten: ", new_arr)
+# #transpose:
+# tran = arr.transpose()
+# print("transpose",tran)
+# #where condition
+# ran = np.array([10,20,30,5,3,40,50])
+# print("gretaer than 20 with where :", np.where(ran > 20))
+#matrix multiplication in numpy
+X= np.array([[1,2],[3,4]])
+Y = np.array([[5,6],[7,8]])
+Z = X @ Y
+print("matrix Multiplication", Z)
+A = X*Y
+print("element wise matrix multipication", A)
+#broadcasting
+B = X + 2
+C = X - 2
+D = X * 2
+E = X / 2
+F = np.array([100,200])
+G = X + F
+H = np.array([[500],[600]])
+I = X + H # is sa hr row pr plus hoga
+print("Boradcasting")
+print(B)
+print(C)
+print(D)
+print(E)
+print("Broadcast with Array")
+print(G)
+print("all new row")
+print(I)
+
+
 
 
     
